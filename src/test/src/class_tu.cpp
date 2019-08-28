@@ -11,6 +11,8 @@ void ClassTu::twist_cb
 	ROS_WARN("output : %lf", out_msg.data);
 	ROS_ERROR("output : %lf", out_msg.data);
 	
+	pub_.publish(out_msg);
+	
 	return;
 }
 
