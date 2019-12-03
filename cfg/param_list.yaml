@@ -1,0 +1,3 @@
+param_pub:
+  int_param: 300
+  str_param: "This param is transferred from param list!"

@@ -1,2 +1,0 @@
-test
--DCATKIN_DEVEL_PREFIX=/home/rubis/test_ws/devel -DCMAKE_INSTALL_PREFIX=/home/rubis/test_ws/install -G Unix Makefiles

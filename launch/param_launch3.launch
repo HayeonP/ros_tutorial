@@ -1,0 +1,7 @@
+<launch>
+    <rosparam command="load" file="/home/hypark/catkin_ws/src/ros_tutorial/cfg/param_list.yaml" />
+
+    <node pkg="ros_tutorial" type="param_pub" name="param_pub"/>
+
+    <node pkg="ros_tutorial" type="param_sub" name="param_sub" output="screen"/>
+</launch>

@@ -1,0 +1,10 @@
+<launch>
+    <rosparam>
+        param_pub/int_param: 200
+        param_pub/str_param: This param is transferred from launch 2!
+    </rosparam>
+
+    <node pkg="ros_tutorial" type="param_pub" name="param_pub"/>
+
+    <node pkg="ros_tutorial" type="param_sub" name="param_sub" output="screen"/>
+</launch>

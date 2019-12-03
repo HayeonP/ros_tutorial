@@ -1,0 +1,11 @@
+<launch>
+    <arg name="int_param" default="100"/>
+    <arg name="str_param" default="This param is transferred from launch 1!"/>
+
+    <node pkg="ros_tutorial" type="param_pub" name="param_pub">
+        <param name="int_param" value="$(arg int_param)" />
+        <param name="str_param" value="$(arg str_param)" />
+    </node>
+
+    <node pkg="ros_tutorial" type="param_sub" name="param_sub" output="screen"/>
+</launch>
